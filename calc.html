@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="screen">
+      <input type="text" id="answer" readonly placeholder="0">
+    </div>
+    <div class="all-input">
+      <input type="button" class="operator" value="AC" onclick="clearScreen()">
+      <input type="button" class="operator" value="←" onclick="backspace()">
+      <input type="button" class="operator" value="+/-" onclick="negate()">
+      <input type="button" class="operator" value="/" onclick="append('/')">
+
+      <input type="button" value="7" onclick="append('7')">
+      <input type="button" value="8" onclick="append('8')">
+      <input type="button" value="9" onclick="append('9')">
+      <input type="button" class="operator" value="x" onclick="append('*')">
+
+      <input type="button" value="4" onclick="append('4')">
+      <input type="button" value="5" onclick="append('5')">
+      <input type="button" value="6" onclick="append('6')">
+      <input type="button" class="operator" value="-" onclick="append('-')">
+
+      <input type="button" value="1" onclick="append('1')">
+      <input type="button" value="2" onclick="append('2')">
+      <input type="button" value="3" onclick="append('3')">
+      <input type="button" class="operator" value="+" onclick="append('+')">
+
+      <input type="button" class="operator" value="%" onclick="append('%')">
+      <input type="button" class="zero" value="0" onclick="append('0')">
+      <input type="button" value="." onclick="append('.')">
+      <input type="button" class="operator" value="=" onclick="calculate()">
+    </div>
+  </div>
+
+  <!-- link external script -->
+  <script src="script.js"></script>
+</body>
+</html>
